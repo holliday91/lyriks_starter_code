@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { Error, Loader, SongCard } from "../components";
 import { useGetSongsBySearchQuery } from "../redux/services/shazamCore";
 
+
+
 const Search = () => {
     const {searchTerm} = useParams();
     const { activeSong, isPlaying } = useSelector((state) => state.player);
